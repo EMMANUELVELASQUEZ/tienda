@@ -1,18 +1,5 @@
 <?php
-// 1. CONEXIÓN A LA BASE DE DATOS (XAMPP)
-$servidor = "localhost";
-$usuario  = "root"; 
-$password = ""; 
-$base_datos = "tienda"; // Nombre exacto de tu base de datos en la captura
-
-$conexion = new mysqli($servidor, $usuario, $password, $base_datos);
-
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-}
-
-// Asegurar caracteres correctos (acentos, Ñ, etc.)
-$conexion->set_charset("utf8mb4");
+require_once 'db.php';
 
 // 2. CONSULTAR LOS PRODUCTOS DE TU TABLA ACTUAL
 $sql = "SELECT * FROM productos";

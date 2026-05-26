@@ -1,18 +1,6 @@
 <?php
-// 1. INICIAR SESIÓN DE PHP Y CONEXIÓN
 session_start();
-
-$servidor = "localhost";
-$usuario  = "root"; 
-$password = ""; 
-$base_datos = "tienda";
-
-$conexion = new mysqli($servidor, $usuario, $password, $base_datos);
-
-if ($conexion->connect_error) {
-    die("Error de conexión: " . $conexion->connect_error);
-}
-$conexion->set_charset("utf8mb4");
+require_once 'db.php';
 
 $error_login = "";
 $error_registro = "";
