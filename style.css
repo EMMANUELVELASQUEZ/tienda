@@ -1,0 +1,152 @@
+/* PALETA DE COLORES RAMI SHOP: Crema (#F2E8DF), Negro (#000000) */
+
+* { box-sizing: border-box; text-transform: uppercase; }
+
+body {
+    font-family: 'Times New Roman', serif;
+    margin: 0;
+    scroll-behavior: smooth;
+    background-color: #F2E8DF;
+    color: #1a1a1a;
+}
+
+/* --- HEADER REFORZADO PARA RAMI SHOP --- */
+header {
+    background-color: #ffffff;
+    padding: 10px 40px; 
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    /* AUMENTAMOS EL ALTO DEL CONTENEDOR */
+    height: 180px !important; 
+}
+
+/* --- LOGO GRANDE Y NOTORIO --- */
+.logo-header {
+    /* FORZAMOS EL TAMAÑO DE LA IMAGEN */
+    height: 160px !important; 
+    width: auto !important;
+    max-height: 160px !important;
+    object-fit: contain;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.logo-header:hover {
+    transform: scale(1.05);
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav a { 
+    color: #000; 
+    text-decoration: none; 
+    margin-left: 30px; 
+    font-size: 1.1em;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* ESTILO DEL BOTÓN MI CUENTA */
+nav a:last-child {
+    background-color: #000;
+    color: #fff;
+    padding: 12px 25px;
+    margin-left: 35px;
+}
+
+/* SECCIÓN DE BIENVENIDA */
+.hero {
+    background-color: #F2E8DF;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.contenido-bienvenida h2 { 
+    font-size: 4em; 
+    color: #000;
+    margin-bottom: 10px;
+    letter-spacing: 5px;
+}
+
+.contenido-bienvenida p { 
+    font-size: 1.1em; 
+    max-width: 600px; 
+    text-transform: none; 
+    margin: 0 auto;
+    color: #444;
+}
+
+.btn-descubrir {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 15px 50px;
+    background-color: #000;
+    color: #F2E8DF;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.btn-descubrir:hover {
+    background-color: #444;
+}
+
+/* SECCIÓN TIENDA */
+.seccion-tienda { padding: 80px 20px; background-color: #fff; }
+
+.contenedor-productos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.producto {
+    padding: 20px;
+    transition: 0.3s;
+    text-align: center;
+    background: #fff;
+}
+
+.producto img { 
+    width: 100%; 
+    height: 250px; 
+    object-fit: contain; 
+}
+
+.precio { 
+    color: #000; 
+    font-weight: bold; 
+    font-size: 1.2em; 
+    margin: 15px 0;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+footer {
+    background-color: #000;
+    color: #F2E8DF;
+    text-align: center;
+    padding: 40px;
+}
