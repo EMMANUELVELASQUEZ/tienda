@@ -2,7 +2,7 @@
 $servidor   = getenv('MYSQLHOST')     ?: 'localhost';
 $usuario    = getenv('MYSQLUSER')     ?: 'root';
 $password   = getenv('MYSQLPASSWORD') ?: '';
-$base_datos = getenv('MYSQLDATABASE') ?: 'tienda';
+$base_datos = getenv('MYSQLDATABASE') ?: 'railway';
 $puerto     = (int)(getenv('MYSQLPORT') ?: 3306);
 
 $conexion = new mysqli($servidor, $usuario, $password, $base_datos, $puerto);
